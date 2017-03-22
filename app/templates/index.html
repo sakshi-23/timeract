@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/jquery-ui.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css')}}">
+    <script src="{{ url_for('static',filename='js/d3.js')}}"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/graph.js')}}"></script>
+</head>
+<iframe name="hiddenFrame" class="hide"></iframe>
+<body>
+
+    <div class="body-container">
+
+        <div class="nav">
+         <h2>Timeract</h2>
+        </div>
+        <!--<div class="btn btn-default toggler btn-xs" data-toggle="collapse" data-target="#upload">File Upload <span class="glyphicon glyphicon-menu-down"></span></div>-->
+         <div class="btn btn-default toggler btn-xs" >File Upload <span class="glyphicon glyphicon-menu-down"></span></div>
+
+        <div id="upload" class="collapse functions">
+            <form id="fileUploadForm" method="post" enctype="multipart/form-data" target="hiddenFrame">
+                 <label>Choose input files *</label><input type="file" name="file"  class="input-md" multiple accept="text/csv">
+                 <button id="fileUpload" class="btn btn-xs ">Upload</button>
+            </form>
+            <form id="mapUploadForm" method="post" enctype="multipart/form-data" target="hiddenFrame">
+                 <label>Files mapping </label><input type="file" name="map" class="input-md"  accept="application/json">
+                 <button id="mapUpload" class="btn btn-xs ">Upload</button>
+                 <span>e.g. [{"File": "file1","Item": "Google Inc"},{"File": "file2","Item": "Goldman Sachs"}]</span>
+            </form>
+        </div>
+
+        <div class="btn btn-default toggler btn-xs" data-toggle="collapse" data-target="#viewAll">View Uploaded <span class="glyphicon glyphicon-menu-down"></span></div>
+        <div id="viewAll" class="collapse in functions container">
+               <div class="ui-widget">
+                   <input id="tags" class="col-md-11" type="text" placeholder="Search by File or Mapped name ">
+                   <button id="showVis" class="btn btn-default btn-xs" type="button">Visualize</button>
+               </div>
+
+            <div id="search" >
+              Find all data records that have <select id="greaterlesser"><option value="1">increased</option><option value="-1">decreased</option> atleast by</select> <input type="number" id="percentChange"> % in the last
+              <input id="timeline" type="number"  list="timeFrames"> intervals
+              <div id="itemList">
+
+              </div>
+            </div>
+        </div>
+        <div class="btn btn-default toggler btn-xs" data-toggle="collapse" data-target="#visualize">Visualize <span class="glyphicon glyphicon-menu-up"></span></div>
+
+
+        <div id="visualize" class="collapse functions">
+            <div id="controls" class="col-md-12">
+                <div class="col-md-9">
+                Add events<select id="eventSelection">
+                             <option value="">-</option>
+                            <option value="news">News</option>
+                            <option value="Custom" disabled>Upload event file</option>
+                          </select>
+
+
+                    <button id="regionsButton" class="btn btn-default btn-xs">Emphasize time range</button>
+                    <button id="predictionPastButton" class="btn btn-default btn-xs">Model past performance</button>
+                    <button id="predictionSimilarButton" class="btn btn-default btn-xs">Model based similar dates</button>
+                     <button id="userPredictionButton" class="btn btn-default btn-xs">Historic change possibility</button>
+                    <span class="tag">Past instances</span>
+                    <div id="historyRange" > <div id="custom-handle-history" class="ui-slider-handle"></div></div>
+                    <span class="tag">Prediction period</span>
+                    <div id="predictionRange"> <div id="custom-handle-prediction" class="ui-slider-handle"></div></div>
+                    <button id="regionSelected" class="btn btn-default btn-xs btn-primary">Region Selection Done</button>
+                    <span class="weight-info">Weight Controls: <input id="weightControls" type="number" min="0" max="5" value="1"></span>
+                </div>
+                <div class="col-md-3">
+                    <div class="event-tip"></div>
+                    <!--<svg id="userPrediction" style="width:250px;height:75px"></svg>-->
+                    </div>
+
+            </div>
+             <div id="chart"></div>
+            <div class="loader"></div>
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>
+
+<datalist id="timeFrames">
+    <option value="7">(1 week)</option>
+    <option value="30">(1 month)</option>
+    <option value="365">(1 year)</option>
+    <option value="-1">(Start)</option>
+</datalist>

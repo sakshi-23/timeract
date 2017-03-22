@@ -1,0 +1,203 @@
+[
+ {
+   "File": "AAPL",
+   "Item": "Apple Inc."
+ },
+ {
+   "File": "ABBV",
+   "Item": "AbbVie Inc."
+ },
+ {
+   "File": "ABT",
+   "Item": "Abbott Laboratories"
+ },
+ {
+   "File": "AMZN",
+   "Item": "Amazon.com"
+ },
+ {
+   "File": "AXP",
+   "Item": "American Express Inc."
+ },
+ {
+   "File": "BA",
+   "Item": "Boeing Co."
+ },
+ {
+   "File": "BAC",
+   "Item": "Bank of America Corp"
+ },
+ {
+   "File": "BIIB",
+   "Item": "Biogen Idec"
+ },
+ {
+   "File": "BK",
+   "Item": "The Bank of New York Mellon"
+ },
+ {
+   "File": "BLK",
+   "Item": "BlackRock Inc"
+ },
+ {
+   "File": "BMY",
+   "Item": "Bristol-Myers Squibb"
+ },
+ {
+   "File": "BRK.B",
+   "Item": "Berkshire Hathaway"
+ },
+ {
+   "File": "DIS",
+   "Item": "The Walt Disney Item"
+ },
+ {
+   "File": "DOW",
+   "Item": "Dow Chemical"
+ },
+ {
+   "File": "DUK",
+   "Item": "Duke Energy"
+ },
+ {
+   "File": "EMR",
+   "Item": "Emerson Electric Co."
+ },
+ {
+   "File": "EXC",
+   "Item": "Exelon"
+ },
+ {
+   "File": "F",
+   "Item": "Ford Motor"
+ },
+ {
+   "File": "FB",
+   "Item": "Facebook"
+ },
+ {
+   "File": "FDX",
+   "Item": "FedEx"
+ },
+ {
+   "File": "FOX",
+   "Item": "21st Century Fox"
+ },
+ {
+   "File": "FOXA",
+   "Item": "21st Century Fox"
+ },
+ {
+   "File": "GD",
+   "Item": "General Dynamics"
+ },
+ {
+   "File": "GE",
+   "Item": "General Electric Co."
+ },
+ {
+   "File": "GILD",
+   "Item": "Gilead Sciences"
+ },
+ {
+   "File": "GM",
+   "Item": "General Motors"
+ },
+ {
+   "File": "GOOG",
+   "Item": "Alphabet Inc"
+ },
+ {
+   "File": "GOOGL",
+   "Item": "Alphabet Inc"
+ },
+ {
+   "File": "GS",
+   "Item": "Goldman Sachs"
+ },
+ {
+   "File": "HAL",
+   "Item": "Halliburton"
+ },
+ {
+   "File": "HD",
+   "Item": "Home Depot"
+ },
+ {
+   "File": "HON",
+   "Item": "Honeywell"
+ },
+ {
+   "File": "IBM",
+   "Item": "IBM"
+ },
+ {
+   "File": "INTC",
+   "Item": "Intel Corporation"
+ },
+ {
+   "File": "JNJ",
+   "Item": "Johnson & Johnson Inc"
+ },
+ {
+   "File": "JPM",
+   "Item": "JP Morgan Chase"
+ },
+ {
+   "File": "KHC",
+   "Item": "Kraft Heinz"
+ },
+ {
+   "File": "KMI",
+   "Item": "Kinder Morgan Inc"
+ },
+ {
+   "File": "KO",
+   "Item": "Coca-Cola"
+ },
+ {
+   "File": "NKE",
+   "Item": "Nike"
+ },
+ {
+   "File": "ORCL",
+   "Item": "Oracle Corporation"
+ },
+ {
+   "File": "OXY",
+   "Item": "Occidental Petroleum Corp."
+ },
+ {
+   "File": "PCLN",
+   "Item": "Priceline Group Inc"
+ },
+ {
+   "File": "PEP",
+   "Item": "Pepsico Inc."
+ },
+ {
+   "File": "V",
+   "Item": "Visa Inc."
+ },
+ {
+   "File": "VZ",
+   "Item": "Verizon Communications Inc"
+ },
+ {
+   "File": "WBA",
+   "Item": "Walgreens Boots Alliance"
+ },
+ {
+   "File": "WFC",
+   "Item": "Wells Fargo"
+ },
+ {
+   "File": "WMT",
+   "Item": "WalMart"
+ },
+ {
+   "File": "XOM",
+   "Item": "Exxon Mobil Corp"
+ }
+]
+

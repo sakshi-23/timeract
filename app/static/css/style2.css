@@ -1,0 +1,167 @@
+body {
+  margin:0;
+  background:#f3f3f3;
+  font-family: 'Muli', sans-serif;
+  font-size: 12px;
+}
+
+.hidden{
+	fill:none;
+	stroke:none
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+line{
+	stroke:black;
+}
+
+.controls{
+	float:left;
+	position:absolute
+}
+
+#control0{
+	margin-left:220px
+}
+
+.timeseries-chart{
+	margin-top:30px;
+	margin-bottom:20px;
+}
+
+
+
+.x-axis .tick line{ 
+	opacity:0.1!important;
+	stroke:#0042FE
+}
+
+#time-control{
+	margin: 0;
+    background: #959597;
+    padding: 18px;
+}
+
+#news{
+    margin: 50px 0;
+    height: 150px;
+    overflow: auto;
+    position: relative;
+    border: 1px solid rgba(64, 63, 53, 0.56);
+    }
+
+.abs{
+	overflow: hidden;
+    line-height: 1em;
+    max-height: 10em;
+    background: #fffbf2;
+    padding: 10px;
+    margin: 5px;
+    width: 100px;
+    float: left;
+    height: 100px;
+}
+
+.date{
+    font-weight: bold;
+    text-align: center;
+    font-size:16px
+}
+
+.tick text{
+	font-size:6px
+}
+
+
+line.userPrediction{
+	stroke:rgb(244, 224, 50);
+	stroke-width:2px;
+}
+
+.predicted-svg{
+    position: absolute;
+    left: 590px;
+}
+    
+.slider{
+    margin: -10px 40px;
+ }
+ 
+ .second{
+	display:none;
+	margin-left: 640px;
+	float: left;
+ }
+ 
+ #regionControl{
+    float: right;
+    width: 200px;
+    }
+ 
+ .measure{
+ 	fill:gray
+ }
+
+ .badge{
+    left: 5px;
+ }
+
+ #organizations .btn-primary{
+    padding: 10px;
+    margin: 15px;
+    width: 250px;
+
+ }
+
+  #organizations .sym{
+     width: 180px;
+    display: -webkit-inline-box;
+    overflow: hidden;
+ }
+
+
+#search{
+    margin-top: 30px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.hoverText{
+        position: absolute;
+    /* height: 28px; */
+    pointer-events: none;
+    background: #dadada;
+    padding: 6px;
+    border: 2px solid gray;
+    stroke-width: 2px;
+    display: none;
+    font-weight: bold;
+}
+
+.news-rect{
+    fill:#697e88
+}
+
+.region{
+    fill: #709970
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/jquery-ui.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css')}}">
+	<script src="{{ url_for('static',filename='js/d3.js')}}"></script>
+	<script src="{{ url_for('static',filename='js/jquery.js')}}"></script>
+	<script src="{{ url_for('static',filename='js/jquery-ui.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='js/app2.js') }}"></script>
+
+</head>
+<body>
+<div id="time-control">
+	<div id="regionControl"></div>
+	<span>Prediction period: <input type="number" name="predictionPeriod" value=30></span>
+	<span>Start date: <input type="date" name="startDate" value="2014-01-25"></span>
+	<span>End date: <input type="date" name="endDate" value="2017-01-30"></span>
+	<span>Organization<input type="text" name="organization0" ></span>
+	<!--<button id="addOrg">+</button>-->
+	<button index="0" class="process">Process</button>
+	<!--<span style="margin-left:50px"></span>-->
+	<!--&lt;!&ndash;<div class="second">&ndash;&gt;-->
+		<!--&lt;!&ndash;<input type="text" name="organization1" value="AAPL">&ndash;&gt;-->
+		<!--&lt;!&ndash;<button index="1" class="process">Process</button>&ndash;&gt;-->
+	<!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+
+</div>
+
+
+<div class="timeseries-chart"></div>
+<div id="allCharts"></div>
+<!--
+<div class="control-panel">
+</div>
+<div id="slider"></div> -->
+<div id="news"></div>
+
